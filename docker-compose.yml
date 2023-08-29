@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  example_application:
+    image: node:18
+    command: yarn && yarn start
+    working_dir: /app
+    volumes:
+      - .:/app
