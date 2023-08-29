@@ -7,7 +7,7 @@
 	// The .devcontainer/docker-compose.yml file contains any overrides you need/want to make.
 	"dockerComposeFile": [
 		"../docker-compose.yml",
-		"docker-compose.yml"
+		"docker-compose.yml",
 	],
 
 	// The 'service' property is the name of the service for the container that VS Code should
@@ -31,7 +31,7 @@
 	// "shutdownAction": "none",
 
 	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "cat /etc/os-release",
+	postCreateCommand: "npm install"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
